@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="pack.ExcelTest">
+        <methods>
+          <include name="testWithExcelData"/>
+        </methods>
+      </class> <!-- pack.ExcelTest -->
+      <class name="pack.TestFace1">
+        <methods>
+          <include name="avant"/>
+          <include name="after"/>
+          <include name="test1" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- pack.TestFace1 -->
+      <class name="pack.TestTitre">
+        <methods>
+          <include name="avant"/>
+          <include name="after"/>
+          <include name="test4"/>
+        </methods>
+      </class> <!-- pack.TestTitre -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
